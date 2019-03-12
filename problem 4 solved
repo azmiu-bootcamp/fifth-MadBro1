@@ -1,0 +1,8 @@
+def isPolindrome(num):
+    if str(num)==str(num)[::-1]:
+        print('True')
+    else:
+        print('False')
+isPolindrome(121121)
+isPolindrome(1234321)
+isPolindrome(89534232)
