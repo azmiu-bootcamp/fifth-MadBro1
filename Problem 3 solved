@@ -1,8 +1,16 @@
 def lone_sum(a, b, c):
-    if a==b==c or a==b or a==c or b==c:
+    if a==b==c:
         return 0
+    elif a==c:
+        return b 
+    elif a==b:
+        return c
+    elif a==c:
+        return b
+    elif b==c:
+        return a
     else:
         return a+b+c
 print(lone_sum(4,3,4))
 print(lone_sum(8,8,8))
-print(lone_sum(4,3,9))
+print(lone_sum(4,9,9))
